@@ -1,0 +1,226 @@
+@import "calc";
+
+body {
+  background: @bg;
+  .fullScreen();
+  overflow: hidden;
+  color: @color;
+}
+input {
+  font-family: "Microsoft YaHei","STHeiti","SimSun","STSong","宋体","Arial","Helvetica","sans-serif";
+  color: #295478;
+  font-weight: 100;
+}
+select {
+  font-family: "Microsoft YaHei","STHeiti","SimSun","STSong","宋体","Arial","Helvetica","sans-serif";
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #c4c4c4;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #c4c4c4;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #c4c4c4;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #c4c4c4;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.passport-container {
+  .fullScreen();
+  .maxWidth(414);
+  overflow: hidden;
+  margin: auto;
+}
+
+.passport-login-submit {
+  color: #ffffff;
+  background: #dc166a;
+  .width(285);
+  .height(42);
+  margin: 1rem auto;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  .line-height(42);
+}
+
+.passport-common-submit {
+  color: #e83f87;
+  background: #ffe6f0;
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#ffebf3), to(#ffe2ef));
+  border: 1px solid #e0bbcb;
+  .width(235);
+  .height(45);
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  .line-height(42);
+}
+
+.passport-common-inputgroup {
+  background: #ffffff;
+  .width(285.5);
+  margin: 0 auto;
+  div {
+    .height(46);
+    width: 100%;
+    input {
+      width: 100%;
+      height: 100%;
+      font-size: 1rem;
+      padding: 0 1rem;
+      color: #666666;
+    }
+    border: 1px solid #c4c4c4;
+    border-bottom: none;
+  }
+  div:last-child {
+    border-bottom: 1px solid #c4c4c4;
+  }
+}
+
+.passport-common-input {
+  .width(285);
+  margin: 0 auto;
+  .height(58);
+  input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    color: #666666;
+  }
+}
+
+.passport-single-input {
+  .width(285);
+  margin: 0 auto;
+  .height(58);
+  input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    color: #666666;
+  }
+}
+
+.passport-common-vcode {
+  .height(47.5);
+  margin: 0 auto;
+  font-size: 1.2rem;
+  .rowFlex();
+  position: relative;
+  input {
+    display: inline-block;
+    width: 66%;
+    padding: 0 2.3rem;
+    color: #666666;
+    font-size: 1rem;
+  }
+  .passport-common-request-vcode {
+    background: #f0f0f0;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#e9e9e9));
+    border-radius: .3rem;
+    border: 1px solid #c7c7c7;
+    color: #666;
+    font-size: .8rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  .passport-common-disable-vcode.passport-common-request-vcode {
+    background: #a3a3a3;
+    border: 1px solid #a3a3a3;
+    font-size: .8rem;
+    color: #fff;
+  }
+}
+
+.passport-common-top-bar {
+  .height(49);
+  background: #ffffff;
+  color: #e83f87;
+  border-bottom: 1px solid #ed8ab4;
+  position: relative;
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+    .line-height(51);
+  }
+  .back {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    .marginTop(8.5);
+    color: #e83f87;
+    font-size: 2rem;
+    font-weight: bold;
+    a {
+      display: block;
+      background: url(../../../img/passport/ico-arrow-top.png) center center no-repeat;
+      background-size: contain;
+      .width(10.5);
+      .height(17);
+    }
+  }
+}
+
+.passport-errmsg-container {
+  .fullScreen();
+  z-index: 99999;
+  .passport-common-errmsg{
+    position: absolute;
+    z-index: 999;
+    border-radius: 1rem;
+    background: rgba(0,0,0,0.65);
+    line-height: 2.5rem;
+    color: #fff;
+    .width(265);
+    .height(37);
+    left: 50%;
+    .marginLeft(132.5);
+    top: 41%;
+    text-align: center;
+    span {
+      position: relative;
+      font-size: 1rem;
+    }
+  }
+}
+
+.passport-common-errmsg{
+  position: absolute;
+  z-index: 999;
+  border-radius: 1rem;
+  background: rgba(0,0,0,0.65);
+  line-height: 2.5rem;
+  color: #fff;
+  .width(265);
+  .height(37);
+  left: 9%;
+  top: 41%;
+  text-align: center;
+  margin: 0 auto;
+  span {
+    position: relative;
+    font-size: 1rem;
+  }
+}
+
+.enable-click-ios {
+  cursor: pointer;
+}

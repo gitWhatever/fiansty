@@ -1,0 +1,180 @@
+@import "calc";
+
+.community-container {
+  overflow: hidden;
+}
+
+
+
+.index-common-tip {
+  .width(53);
+  .height(17);
+  background: url(../../../img/community/index_tip.png) center center no-repeat;
+  background-size: contain;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  color: #ffffff;
+  text-indent: .6rem;
+  position: absolute;
+  i {
+    border-radius: 50%;
+    background: #dc166a;
+    width: .4rem;
+    height: .4rem;
+    position: absolute;
+    left: .3rem;
+    top: .4rem;
+  }
+}
+
+.index-container {
+  .fullScreen();
+  overflow: hidden;
+  .index-content-slider-container {
+    .index-slider-tip {
+      position: absolute;
+    }
+    .index-slider-tip-top {
+      right: 50%;
+      .marginLeft(53);
+      top: 5%;
+    }
+    .index-slider-tip-left {
+      top: 50%;
+      left: 15%;
+    }
+    .index-slider-tip-right {
+      bottom: 38%;
+      right: 30%;
+    }
+    .index-slider-tip-bottom {
+      bottom: 5rem;
+      right: 35%;
+    }
+    position: absolute;
+    left: 0;
+    right: 0;
+    .top(60.5);
+    .bottom(78.5);
+    .octopusui-container {
+      width: 100%;
+      height: 100%;
+      overflow: visible !important;
+      .octopusui-slider-gizmos {
+        text-align: center;
+        bottom: -19px;
+        left: 0;
+        right: 0;
+      }
+      .octopusui-slider-gizmositem {
+        background: #5f5f5f;
+      }
+      .octopusui-slider-gizmositem.octopusui-slider-currentgizmositem {
+        background: #dc166a;
+      }
+      .index-slider-user-container {
+        background: #cdcdcd;
+        .octopusui-slider-imgTitle {
+          text-align: center;
+          background: rgba(18, 18, 18, .5);
+          padding: 1rem;
+          .octopusui-slider-imgTitleContent {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .index-header {
+    .height(45.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid rgba(220, 22, 106, .5);
+    background: url(../../../img/community/z_logo.jpg) center center no-repeat;
+    .background-size(58, 16);
+  }
+
+  .index-footer {
+    position: absolute;
+    border-top: 1px solid #b35270;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4.5rem;
+    .rowFlex();
+    border-top: 1px solid rgba(220, 22, 106, .5);
+    background: #f2f1f1 url(../../../img/community/index_divide.jpg) center center no-repeat;
+    .background-size(2, 33);
+    .footer-btn {
+      text-align: center;
+      position: relative;
+      flex: 1 100%;
+      width: 49%;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1rem;
+      height: 4rem;
+      color: #727272;
+      i {
+        display: block;
+        margin-top: .6rem;
+        .height(20.5);
+        background: center center no-repeat;
+      }
+    }
+    #z_index {
+      i {
+        background-image: url(../../../img/community/z_btn_normal.png);
+        .background-size(9.5, 11.5);
+      }
+    }
+    .cur#z_index {
+      i {
+        background-image: url(../../../img/community/z_btn_cur.png);
+      }
+    }
+
+    #s_index {
+      i {
+        background-image: url(../../../img/community/r_btn_normal.png);
+        .background-size(9.5, 11.5);
+      }
+    }
+    .cur#s_index {
+      i {
+        background-image: url(../../../img/community/r_btn_cur.png);
+      }
+    }
+
+    #d_index {
+      i {
+        background-image: url(../../../img/community/d_btn_normal.png);
+        .background-size(13.5, 13.5);
+      }
+    }
+    .cur#d_index {
+      i {
+        background-image: url(../../../img/community/d_btn_cur.png);
+      }
+    }
+
+    #f_index {
+      i {
+        background-image: url(../../../img/community/f_btn_normal.png);
+        .background-size(13.5, 13.5);
+      }
+    }
+    .cur#f_index {
+      i {
+        background-image: url(../../../img/community/f_btn_cur.png);
+      }
+    }
+
+    .cur.footer-btn {
+      color: #dc166a;
+    }
+  }
+}
+

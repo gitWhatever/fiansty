@@ -1,0 +1,41 @@
+@import "calc";
+
+
+input {
+  font-family: "Microsoft YaHei","STHeiti","SimSun","STSong","宋体","Arial","Helvetica","sans-serif";
+  color: #295478;
+  font-weight: 100;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #666666;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #666666;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #666666;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #666666;
+}
+
+.passport-regist {
+  background: #f8f8f8;
+  background-size: cover;
+  text-align: center;
+  .fullScreen();
+  .passport-regist-vcode-area {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e4d9d9;
+  }
+  .passport-common-inputgroup {
+    background: #f8f8f8;
+    div {
+      .height(47.5);
+      border-color: #d6c5c5;
+    }
+    div:first-child {
+      border-top: none;
+    }
+  }
+}

@@ -1,0 +1,239 @@
+@import "calc";
+
+.webuploader-element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+}
+
+.webuploader-pick {
+  position: absolute;
+  top: 0;
+  left: 1.6rem;
+  bottom: 0;
+  right: 0;
+}
+
+.passport-info {
+  background: #f8f8f8;
+  text-align: center;
+  .fullScreen();
+  .passport-info-layout {
+    height: 100%;
+    margin: auto;
+    position: relative;
+    .passport-info-skip {
+      font-size: 1rem;
+      position: absolute;
+      text-align: right;
+      right: 1rem;
+      top: 1.3rem;
+      a {
+        color: #e83f87;
+        text-decoration: none;
+      }
+    }
+
+    .passport-info-story-wrap {
+      .height(47);
+      overflow: hidden;
+      position: relative;
+      border-bottom: 1px solid #e4d9d9;
+      color: #010101;
+      font-size: 1rem;
+      text-align: left;
+      padding-left: 1.6rem;
+      font-weight: bold;
+      line-height: 3rem;
+      .passport-info-story-text {
+        width: 15rem;
+        text-align: right;
+        overflow: hidden;
+        position: absolute;
+        right: 1rem;
+        color: #999999;
+        top: 0;
+        font-weight: 100;
+        font-size: 0.7rem;
+      }
+    }
+
+    .passport-info-img-wrap {
+      .height(66);
+      border-bottom: 1px solid #e4d9d9;
+      color: #010101;
+      font-size: 1rem;
+      text-align: left;
+      vertical-align: middle;
+      position: relative;
+      padding-left: 1.6rem;
+      h4 {
+        position: absolute;
+        top: 38%;
+      }
+      img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 10px;
+        position: absolute;
+        top: 17%;
+        right: 15%;
+      }
+      .arrow {
+        background: url(../../../img/passport/arrow.png) center center no-repeat;
+        background-size: cover;
+        .ratioTextArrow(3);
+        position: absolute;
+        top: 30%;
+        right: 5%;
+      }
+    }
+
+    .passport-info-list {
+      margin: 0 auto;
+      color: #010101;
+      font-size: 1rem;
+      overflow-y: hidden;
+      .passport-info-item {
+        width: 100%;
+        .height(47);
+        border-bottom: 1px solid #e4d9d9;
+        position: relative;
+        text-align: left;
+        padding-left: 1.6rem;
+        color: #010101;
+        line-height: 3rem;
+        font-size: 0.9rem;
+      }
+      .passport-info-item-text {
+        position: absolute;
+        right: 3rem;
+        color: #ababab;
+        font-size: 0.8rem;
+        top: 0;
+      }
+      .item-arrow {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        background: url(../../../img/passport/ico-arrow-text.png) center center no-repeat;
+        background-size: cover;
+        .ratioTextArrow(3);
+      }
+    }
+  }
+
+  .passport-info-button-group {
+    margin-top: 2rem;
+    position: relative;
+    .btn-pwd {
+      position: absolute;
+      left: 15%;
+      .line-height(34);
+      background: #ffe6f1;
+      .height(34);
+      .width(100);
+      border-radius: .3rem;
+      border: 1px solid #e0bbcb;
+      a {
+        text-decoration: none;
+        color: #e83f87;
+      }
+    }
+    .btn-logout {
+      position: absolute;
+      right: 15%;
+      .line-height(34);
+      background: #e3e3e3;
+      .height(34);
+      .width(100);
+      border-radius: .3rem;
+      border: 1px solid #ababab;
+      a {
+        text-decoration: none;
+        color: #666666;
+      }
+    }
+  }
+
+}
+
+
+.info-set-container {
+  background: #f8f8f8;
+  .fullScreen();
+  .info-set-save {
+    font-size: .9rem;
+    position: absolute;
+    text-align: right;
+    right: 1rem;
+    top: .7rem;
+    .save-btn {
+      color: #e83f87;
+      text-decoration: none;
+      display: block;
+      background: #ffebf4;
+      text-align: center;
+      width: 4rem;
+      height: 2.5rem;
+      line-height: 2.4rem;
+      border-radius: .3rem;
+      border: 1px solid #e4c2d1;
+    }
+  }
+  .info-set-textarea {
+    textarea {
+      .height(107);
+      background: #ffffff;
+      width: 100%;
+      border-bottom: 1px solid #ed8ab4;
+      font-size: 1rem;
+    }
+  }
+  .info-set-theme {
+    width: 100%;
+    color: #393939;
+    p {
+      margin-bottom: 1rem;
+    }
+    .theme-wrap {
+      width: 20rem;
+      margin: 0 auto;
+      .theme-choose{
+        width: 27%;
+        float: left;
+        margin-right: 1rem;
+        img {
+          width: 5.5rem;
+          box-shadow: 2px 2px 5px #666;
+        }
+      }
+    }
+  }
+  .info-name-input-area {
+    border-bottom: 1px solid #e4d9d9;
+  }
+  .info-name-mark {
+    color: #000;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: .9rem;
+  }
+  .info-select-area {
+    color: #666666;
+    border-bottom: 1px solid #e4d9d9;
+    .height(58);
+    .line-height(58);
+    padding-left: 2rem;
+    select {
+      float: right;
+      margin-top: 1.5rem;
+      margin-right: 2rem;
+      border: none;
+      background: #f8f8f8;
+      color: #999999;
+      font-size: .9rem;
+      outline: 0 none;
+    }
+  }
+}
